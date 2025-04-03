@@ -1,12 +1,6 @@
 <?php
-// Start the session
+// logout.php
 session_start();
-
-// Destroy the session
-session_unset();
 session_destroy();
-
-// Redirect to Login.php
-header("Location: checkly.php");
-exit();
+header("Location: Login.php");
 ?>
