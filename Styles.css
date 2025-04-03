@@ -1,0 +1,58 @@
+h1 {
+	text-align: center;
+}
+.login-form {
+	background-color: #FFF5E6;
+	margin: 30px 300px;
+	padding: 30px;
+	border-radius: 5px;
+
+}
+
+input, select, label {
+	display: block;
+	margin: auto;
+	text-align: justify-all;
+	border-box:border box;
+}
+input, select {
+	width: 93%;
+	padding: 12px 20px;
+	border: none;
+	border-box:border box;
+}
+
+}
+label {
+	color: Black;
+}
+.password-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .password-container input[type="password"], .password-container input[type="text"] {
+      width: 100%;
+      padding-right: 40px;
+    }
+    .password-container .toggle-password {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+    button {
+    background-color: #FF7E5F; /* Orange color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8; /* Slight transparency effect on hover */
+}
+
+
+

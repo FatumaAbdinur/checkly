@@ -1,0 +1,196 @@
+/* Energetic Color Scheme */
+:root {
+    --primary: #FF7E5F;      /* Vibrant Orange */
+    --secondary: #F8E16C;    /* Light Yellow */
+    --accent: #2D3047;       /* Deep Blue */
+    --text: #1A1A1A;         /* Almost Black */
+    --background: #FFF5E6;   /* Soft Warm White */
+    --white: #FFFFFF;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: var(--primary);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .nav-link:hover {
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .logout {
+    background-color: var(--accent);
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  #todo-input:focus {
+    border-color: var(--accent);
+  }
+  
+  #add-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  #add-btn:hover {
+    background-color: #FF6B4A;
+  }
+  
+  /* Todo List */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--primary);
+  }
+  
+  .todo-text {
+    flex: 1;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .delete-btn {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #1A1C2F;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .navbar {
+      padding: 12px 15px;
+    }
+    
+    .nav-brand {
+      font-size: 1.3rem;
+    }
+    
+    .input-section {
+      flex-direction: column;
+    }
+    
+    #add-btn {
+      width: 100%;
+    }
+  }

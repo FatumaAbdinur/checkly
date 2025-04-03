@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+  color: #2D3047; /* Deep Blue for text */
+}
+
+header {
+  background-color: #FF7E5F; /* Solid Vibrant Orange header */
+  color: #2D3047; /* Deep Blue for text contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.logo img {
+  width: 100px; 
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #2D3047; /* Deep Blue border */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  color: #2D3047; /* Deep Blue for heading */
+}
+
+.sign {
+  display: flex;
+  gap: 10px;
+}
+
+.signup, .login {
+  background-color: #F8E16C; /* Light Yellow background */
+  color: #2D3047; /* Deep Blue text */
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup:hover, .login:hover {
+  background-color: #2D3047; /* Deep Blue background on hover */
+  color: #F8E16C; /* Light Yellow text on hover */
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  color: #2D3047; /* Deep Blue for text */
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #FF7E5F; /* Vibrant Orange accent */
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #2D3047; /* Deep Blue for heading */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.getstarted {
+  background-color: #FF7E5F; /* Vibrant Orange background */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getstarted:hover {
+  background-color: #f06c4f; /* Slightly darker Vibrant Orange */
+}
+
+.about-us {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-top: 4px solid #F8E16C; /* Light Yellow accent */
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  color: #2D3047; /* Deep Blue for heading */
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Animation Styles */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animations */
+.hero.animate-section {
+  animation-delay: 0.2s;
+}
+
+.about-us.animate-section {
+  animation-delay: 0.4s;
+}
+
+footer {
+  background-color: #2D3047; /* Deep Blue background */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #F8E16C; /* Light Yellow for heading */
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+footer a {
+  color: #FF7E5F; /* Vibrant Orange for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #F8E16C; /* Light Yellow on hover */
+}
